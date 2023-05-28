@@ -1,4 +1,4 @@
-# Helium-IoT services, End User License Agreament and User Conditions
+# Helium-IoT services, End User License Agreement and User Conditions
 
 By registering to Helium IoT services, accessible on the following URL:
 - console.helium-iot.xyz
