@@ -250,8 +250,10 @@ Service is provided for device registered in a fleets with a positive DC balance
 1 DC is corresponding to 1 uplink message with a size under 24bytes (standard uplink). On top of this our service are 
 consuming DCs for different activities defined above:
 - `Downlink communication` - DCs can be consumed for uplink messages, per 24bytes
-- `Duplicates` - DCs can be consumed for duplicates uplink message (also called multi-buy or copies)
+- `Duplicates` - DCs can be consumed for duplicates uplink message (also called multi-buy or Duplicates)
 - `Join Request` - DCs can be consumed on every join request
+- `Join Request Duplicates` - DCs can be consumed on every duplicates of each Join Request
+- `Join Accept`- DCs can be consumed on every join accept
 - `Device registration` - DCs can be consumed by device insertion
 - `Device activity` - DCs can be consumed by active devices per day
 - `Device inactivity` - DCs can be consumed by inactive devices per day of inactivity
@@ -269,8 +271,10 @@ Duplicates, or max_copies, is a paramater set by tenant, by default the value is
 | Activity                 | min DC cost                |
 |--------------------------|----------------------------|
 | Uplink Communication     | 1 DC for 24Bytes data bloc |
-| Duplicates | 1 DC for 24Bytes data bloc |
+| Duplicates               | 1 DC for 24Bytes data bloc |
 | Join Request             | 1 DC                       |
+| Join Request Duplicates  | 0 DC                       | 
+| Join Accept              | 1 DC                       |
 | Device registration      | 100 DCs                    |
 | Downlink Communication   | 1 DC for 24Bytes data bloc |
 | Device Activity          | 0 DC                       |
