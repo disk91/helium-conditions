@@ -279,6 +279,8 @@ Duplicates, or max_copies, is a paramater set by tenant, by default the value is
 | Downlink Communication   | 1 DC for 24Bytes data bloc |
 | Device Activity          | 0 DC                       |
 | Device Inactivity        | 100 DCs per 48h            |
+| FCNT Reset events        | up to 100 DCs per event    |
+
 During the migration phase (running in 2023), Device registration fees will not be applied.
 
 
