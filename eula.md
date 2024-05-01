@@ -95,7 +95,7 @@ Our website stores emails for sending messages via the contact form as well as t
 for statistics and legal needs. 
 
 We use third-party sites that may store your personal information (Magic.link, WordPress, Stripe, Sendgrid) and libraries that may 
-store your personal information (polyfill.io). 
+store your personal information (polyfill.io) and IP Adresses (stadiamaps.com)
 
 Under no circumstances will this data be used by IngeniousThings for marketing purposes on behalf of third parties, nor transmitted to third parties 
 other than to provide you service related communications. IngeniousThings may use this information to contact you about 
