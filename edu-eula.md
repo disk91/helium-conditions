@@ -96,7 +96,7 @@ Our website stores emails for sending messages via the contact form as well as t
 for statistics and legal needs. 
 
 We use third-party sites that may store your personal information (Sendgrid) and libraries that may 
-store your personal information (polyfill.io). 
+store your personal information (polyfill.io) and Ip Addresses (stadiamaps.com)
 
 Your emails are shared with the Helium Foundation, which may use them for marketing and commercial purposes without selling them to third parties. 
 By accepting the terms, you agree that your email will be shared with the Helium Foundation and, if applicable, exported to the USA
