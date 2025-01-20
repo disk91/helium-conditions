@@ -310,8 +310,15 @@ In case you have a such special requirement for personal data protection or heal
 of our service, isolated and secured at the expected level. Our cloud provider is certified for all kind of data and custom
 services can be created for you. Contact us.
 
-Data rate limitation can be applied to devices, it will not be below 800 messages in an hour, Join rate limit can also be activated with a 
-value not below 60 in an hour. Device above these limit are subject to deactivation.
+Devices must comply with fair and respectful use of the regulations. Our service is not responsible for ensuring compliance with rules 
+such as the duty cycle, but if we observe significant non-compliance, we reserve the right to deactivate the affected devices and, at our discretion, 
+ban the user in question.
+
+Additionally, restrictive fair-use rules, beyond the aforementioned regulations, recommend limiting the number of messages (uplink) to less than 
+800 messages per hour and the number of joins request to less than 60 per hour for a given device.
+
+Moreover, activities aimed at burning DCs (Data Credits) to obtain cryptocurrency are not permitted on our service. If such activity is detected, 
+we reserve the right, without prior notice, to ban the user, deactivate the devices, and deny any refund of paid amounts.
 
 ### OPEN SOURCE
 
