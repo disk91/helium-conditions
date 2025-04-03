@@ -175,6 +175,11 @@ legacy helium console.
 At termination of the service, the Data Credits are lost, there is no refund of the DCs in wallet. Data Credits are not 
 transferable neither to any other helium services.
 
+The service **console.helium-iot.eu**, although still technically connected, should no longer be considered active. It 
+has been deemed discontinued since **February 28** and may be permanently shut down at any moment. Once this happens, 
+**retrieving device credentials will no longer be possible**, and **any DCs acquired on this platform will no longer 
+be transferable**.
+
 ### SLA
 
 #### General considerations 
@@ -212,7 +217,8 @@ Device data and metadata can be extracted from the platform API.
 
 ##### `API fair use`
 API are fully accessible to access data and meta-data. Fair use limitation is fixed at 0.5 API request per second maximum per billing user calculated 
-on an average time of 1 hour. Over this limit the customer account can be suspended.
+on an average time of 1 hour. The Daily fair-use API limitation is 1500 per billing user, calculated on rolling 24 hours. Over this limit the customer
+account can be suspended. 
 
 ##### `Disaster Recovery Plan`
 
@@ -278,22 +284,25 @@ Duplicates, or max_copies, is a paramater set by tenant, by default the value is
 | Join Request             | 1 DC                       |
 | Join Request Duplicates  | 0 DC                       | 
 | Join Accept              | 1 DC                       |
-| Device registration      | 100 DCs                    |
+| Device registration      | 50 DCs                     |
 | Downlink Communication   | 1 DC for 24Bytes data bloc |
 | Device Activity          | 0 DC                       |
 | Device Inactivity        | 100 DCs per 48h            |
 | FCNT Reset events        | up to 100 DCs per event    |
 
 During the migration phase (running in 2023), Device registration fees will not be applied.
-
+Since April 2024, Device registration fee applies.
 
 The DC cost is currently Fixed to $0.00005, $5 per 100.000 DCs block on heyiot.xyz / helium-iot.xyz
-The DC cost is currently Fixed to $0.00030, $5 per 100.000 DCs block on helium-iot.eu
+The DC cost is currently Fixed to $0.00200, $200 per 100.000 DCs block on helium-iot.eu (service is now deprecated and should not be used)
 DCs are obtained in the registering to the service, 500 DCs are offered. Then customer can purchase
 DCs with credit card. In case you want different payment option, only possible for a purchase over $500
 you can use a service request to contact us.
 
 Tenant with 0 DC balance will have all the devices data stopped, data transferred during this period of time will be lost.
+
+DCs are a unit used for billing our services. They have no existence outside of this platform and no direct connection with Helium network DCs. 
+They do not correspond to, nor hold any value related to, any token.
 
 ### DEVICE DATA
 
@@ -319,6 +328,15 @@ Additionally, restrictive fair-use rules, beyond the aforementioned regulations,
 
 Moreover, activities aimed at burning DCs (Data Credits) to obtain cryptocurrency are not permitted on our service. If such activity is detected, 
 we reserve the right, without prior notice, to ban the user, deactivate the devices, and deny any refund of paid amounts.
+
+### CLEAN-UP
+
+To ensure the best quality of service for all users, we ask everyone to delete inactive devices and unused tenants. If users do not take action themselves, 
+we will proceed with automatic cleanup according to the following rules:
+
+- Devices without communication activity for more than 3 months, on a tenant running out of credits, will be deleted from the platform, credentials will be lost.
+- Tenant without devices and less than 1000 DCs will be deleted on regular basis.
+- User account without tenant will be deleted.
 
 ### OPEN SOURCE
 
