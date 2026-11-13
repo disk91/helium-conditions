@@ -334,7 +334,7 @@ we reserve the right, without prior notice, to ban the user, deactivate the devi
 To ensure the best quality of service for all users, we ask everyone to delete inactive devices and unused tenants. If users do not take action themselves, 
 we will proceed with automatic cleanup according to the following rules:
 
-- Devices without communication activity for more than 3 months, on a tenant running out of credits, will be deleted from the platform, credentials will be lost.
+- Devices without communication activity for more than 3 months, on a tenant with less than 1000 DC credits, will be deleted from the platform, credentials will be lost.
 - Tenant without devices and less than 1000 DCs will be deleted on regular basis.
 - User account without tenant will be deleted.
 
