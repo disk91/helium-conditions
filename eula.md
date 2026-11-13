@@ -258,7 +258,7 @@ return to the lower SLA limits.
 Service is provided for device registered in a fleets with a positive DC balance. DC is the Helium unit of cost.
 1 DC is corresponding to 1 uplink message with a size under 24bytes (standard uplink). On top of this our service are 
 consuming DCs for different activities defined above:
-- `Downlink communication` - DCs can be consumed for uplink messages, per 24bytes
+- `Downlink communication` - DCs can be consumed for uplink messages, per 24bytes frame size
 - `Duplicates` - DCs can be consumed for duplicates uplink message (also called multi-buy or Duplicates)
 - `Join Request` - DCs can be consumed on every join request
 - `Join Request Duplicates` - DCs can be consumed on every duplicates of each Join Request
@@ -277,18 +277,18 @@ Duplicates, or max_copies, is a paramater set by tenant, by default the value is
 
 #### console.heyiot.xyz / console.helium-iot.eu / console.helium-iot.xyz
 
-| Activity                 | min DC cost                |
-|--------------------------|----------------------------|
-| Uplink Communication     | 1 DC for 24Bytes data bloc |
-| Duplicates               | 1 DC for 24Bytes data bloc |
-| Join Request             | 1 DC                       |
-| Join Request Duplicates  | 0 DC                       | 
-| Join Accept              | 1 DC                       |
-| Device registration      | 50 DCs                     |
-| Downlink Communication   | 1 DC for 24Bytes data bloc |
-| Device Activity          | 0 DC                       |
-| Device Inactivity        | 100 DCs per 48h            |
-| FCNT Reset events        | up to 100 DCs per event    |
+| Activity                 | min DC cost                 |
+|--------------------------|-----------------------------|
+| Uplink Communication     | 1 DC per 24Bytes frame size |
+| Duplicates               | 1 DC per 24Bytes frame size |
+| Join Request             | 1 DC                        |
+| Join Request Duplicates  | 0 DC                        | 
+| Join Accept              | 1 DC                        |
+| Device registration      | 50 DCs                      |
+| Downlink Communication   | 1 DC for 24Bytes frame size |
+| Device Activity          | 0 DC                        |
+| Device Inactivity        | 100 DCs per 48h             |
+| FCNT Reset events        | up to 100 DCs per event     |
 
 During the migration phase (running in 2023), Device registration fees will not be applied.
 Since April 2024, Device registration fee applies.
