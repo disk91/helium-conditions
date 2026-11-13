@@ -337,6 +337,7 @@ we will proceed with automatic cleanup according to the following rules:
 - Devices without communication activity for more than 3 months, on a tenant with less than 1000 DC credits, will be deleted from the platform, credentials will be lost.
 - Tenant without devices and less than 1000 DCs will be deleted on regular basis.
 - User account without tenant will be deleted.
+- User account without login during the past 365 days may be deleted.
 
 ### OPEN SOURCE
 
